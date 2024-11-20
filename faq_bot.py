@@ -12,7 +12,7 @@ It excels in text generation, summarization, and question-answering tasks. LLaMA
 
 def answer_question(question):
     try:
-        if not question.strip():  # Check for empty input
+        if not question.strip():  # Check for empty input etc
             return "Please ask a question!"
         result = qa_model(question=question, context=context)
         # Add a confidence threshold to detect irrelevant answers
